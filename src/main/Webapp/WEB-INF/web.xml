@@ -1,0 +1,102 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4">
+<servlet>
+    <servlet-name>First</servlet-name>
+    <servlet-class>servlets.First</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>First</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>servlets.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/greeting</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PageJSP</servlet-name>
+        <jsp-file>/pages/page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageJSP</servlet-name>
+        <url-pattern>/jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RedirectServlet</servlet-name>
+        <servlet-class>servlets.RedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RedirectServlet</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForwardServlet</servlet-name>
+        <servlet-class>servlets.ForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardServlet</servlet-name>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>servlets.UserAuthServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CounterServlet</servlet-name>
+        <servlet-class>servlets.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CounterServlet</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SetCookies</servlet-name>
+        <servlet-class>servlets.cookies.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookies</servlet-name>
+        <url-pattern>/setcookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookies</servlet-name>
+        <servlet-class>servlets.cookies.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookies</servlet-name>
+        <url-pattern>/getcookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookies</servlet-name>
+        <servlet-class>servlets.cookies.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookies</servlet-name>
+        <url-pattern>/deletecookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubjectServlet</servlet-name>
+        <servlet-class>servlets.jdbc.SubjectsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubjectServlet</servlet-name>
+        <url-pattern>/subjects</url-pattern>
+    </servlet-mapping>
+
+</web-app>
